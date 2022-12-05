@@ -64,7 +64,7 @@ export default {
         },
         placeholder: {
             type: String,
-            default: "Enter text..."
+            default: bus.options.locale.placeholder || "Enter text..."
         },
         disabled: {
             type: Boolean,
@@ -223,7 +223,7 @@ export default {
         if (this.mergedOptions.forcePlainTextOnPaste === true) {
             this.$refs.content.addEventListener("paste", this.onPaste);
         }
-        
+
         this.$refs.content.style.maxHeight = this.mergedOptions.maxHeight;
     },
 

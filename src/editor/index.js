@@ -1,5 +1,5 @@
 import Editr from "./Editr.vue";
-import bus from 'src/editor/bus.js';
+import bus from './bus.js';
 import locales from "./locales";
 
 const localeArray = Object.values(locales);

@@ -18,7 +18,7 @@ div(@mousedown="onBtnClick")
 
 </template>
 <script>
-import bus from 'src/editor/bus.js';
+import bus from './bus.js';
 
 export default {
 	props: ["module", "options"],

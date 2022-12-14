@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import * as Dropzone from 'vue2-dropzone';
+import Dropzone from 'vue2-dropzone';
+
 import bus from 'src/editor/bus.js';
 import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 
@@ -23,7 +24,7 @@ export default {
 
     props: ["options"],
     components: {
-        Dropzone: Dropzone.vue2Dropzone
+        Dropzone
     },
 
     computed: {
